@@ -21,6 +21,7 @@ export class BinPageComponent implements OnInit {
       data: ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'],
     },
     yAxis: {
+      name: 'Kg',
       type: 'value',
     },
     series: [
@@ -54,6 +55,7 @@ export class BinPageComponent implements OnInit {
       }
     },
     yAxis: {
+      name: 'Kg',
     },
     series: [{
       name: 'ménager',
