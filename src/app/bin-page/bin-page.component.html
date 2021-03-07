@@ -1,10 +1,10 @@
 <div class="container">
-  <h1 class="mb-5">Évolution du poids des déchets dans la cuisine.</h1>
-  <h3 class="mb-2 text-center">Comparaison dans le temps</h3>
+  <h1 class="mb-5 text-center">Évolution du poids des déchets dans la cuisine.</h1>
+  <h3 class="mb-2 pt-2 text-center">Comparaison dans le temps</h3>
   <div class="row justify-content-center mb-5">
     <div class="col col-12 col-md-3 d-flex justify-content-center">
       <div class="m-3">
-        Année : - 4%
+        Année : - 22%
         <div class="d-flex justify-content-center m-2">
           <img src="assets/down-arrow.svg" width="32" height="32">
         </div>
@@ -41,7 +41,7 @@
     </div>
     <div class="col col-12 col-md-3 d-flex justify-content-center">
       <div class="m-3 text-center">
-        5 changements par semaine
+        5 changements de sacs par semaine
         <div class="d-flex justify-content-center m-2">
           <img src="assets/garbage-bag.svg" width="32" height="32">
         </div>
@@ -56,7 +56,8 @@
       </div>
     </div>
   </div>
-
+  <h3 class="mb-4 text-center">Évolution par mois depuis 3 ans</h3>
+  <div echarts [options]="chartOptionYear" class="demo-chart mb-5"></div>
 <!-- Combien de grammes par jet de déchet ? -->
 <!-- Combien de tonnes par ans ? -->
 
