@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BinPageComponent} from './bin-page/bin-page.component';
+import {BinPageComponent} from './pages/bin-page/bin-page.component';
+import {MateriauxPageComponent} from './pages/materiaux-page/materiaux-page.component';
 
 const routes: Routes = [
   {
@@ -8,10 +9,13 @@ const routes: Routes = [
     component: BinPageComponent
   }, {
     path: 'materiaux',
-    component: BinPageComponent
+    component: MateriauxPageComponent
   }, {
     path: 'things',
     component: BinPageComponent
+  }, {
+    path: '**',
+    redirectTo: 'bin'
   },
 ];
 

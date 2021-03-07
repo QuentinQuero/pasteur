@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {NgxEchartsModule} from 'ngx-echarts';
-import { BinPageComponent } from './bin-page/bin-page.component';
+import { BinPageComponent } from './pages/bin-page/bin-page.component';
+import { MateriauxPageComponent } from './pages/materiaux-page/materiaux-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BinPageComponent
+    BinPageComponent,
+    MateriauxPageComponent
   ],
   imports: [
     BrowserModule,
