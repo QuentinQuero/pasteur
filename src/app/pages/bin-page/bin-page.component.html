@@ -1,0 +1,64 @@
+<div class="container">
+  <h1 class="mb-5 text-center">Évolution du poids des déchets dans la cuisine.</h1>
+  <h3 class="mb-2 pt-2 text-center">Améliorations</h3>
+  <div class="row justify-content-center mb-5">
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Année : - 22%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/down-arrow.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Mois : + 2%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/up-arrows.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Semaine + 0%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/equal.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="mb-4 text-center">Moyenne par jours</h3>
+  <div echarts [options]="chartOption" class="mb-5"></div>
+  <h3 class="mb-2 text-center">Usages</h3>
+  <div class="row justify-content-center mb-5">
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3 text-center">
+        Moyennes de 84g par déchets
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/core.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3 text-center">
+        5 changements de sacs par semaine
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/garbage-bag.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3 text-center">
+        83 Ouvertures de poubelle par semaine
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/paper-bin.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="mb-4 text-center">Historique</h3>
+  <div echarts [options]="chartOptionYear" class="mb-5"></div>
+<!-- Combien de grammes par jet de déchet ? -->
+<!-- Combien de tonnes par ans ? -->
+
+</div>
