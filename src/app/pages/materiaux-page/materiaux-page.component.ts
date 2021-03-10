@@ -119,12 +119,12 @@ export class MateriauxPageComponent implements OnInit {
         }
       },
       indicator: [
-        { name: 'Bois', max: 6500},
-        { name: 'Metal', max: 16000},
-        { name: 'Plastiques', max: 30000},
-        { name: 'Meubles', max: 38000},
-        { name: 'Peintures', max: 52000},
-        { name: 'Autres', max: 25000}
+        { name: 'Bois'},
+        { name: 'Metal'},
+        { name: 'Plastiques'},
+        { name: 'Meubles'},
+        { name: 'Peintures'},
+        { name: 'Autres'}
       ]
     },
     series: [{
@@ -133,11 +133,11 @@ export class MateriauxPageComponent implements OnInit {
       // areaStyle: {normal: {}},
       data: [
         {
-          value: [4300, 10000, 28000, 35000, 50000, 19000],
+          value: [50, 23, 34, 35, 40, 40],
           name: 'Dons'
         },
         {
-          value: [5000, 14000, 28000, 31000, 42000, 21000],
+          value: [54, 35, 24, 30, 28, 27],
           name: 'Réemploi'
         }
       ]

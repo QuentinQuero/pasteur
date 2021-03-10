@@ -1,9 +1,35 @@
 <div class="container">
   <h1 class="mb-5 text-center">Dons de matériel</h1>
-  <h3 class="mb-4 text-center">Détails des derniers mois</h3>
-  <div echarts [options]="optionMateriaux" class="demo-chart mb-5"></div>
+  <div class="row justify-content-center mb-5">
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Année : - 22%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/down-arrow.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Mois : + 2%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/up-arrows.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+    <div class="col col-12 col-md-3 d-flex justify-content-center">
+      <div class="m-3">
+        Semaine + 0%
+        <div class="d-flex justify-content-center m-2">
+          <img src="../../../assets/equal.svg" width="32" height="32">
+        </div>
+      </div>
+    </div>
+  </div>
   <h3 class="mb-4 text-center">dernière saison chez pasteur</h3>
   <div echarts [options]="option" id="chart" class="demo-chart mb-5"></div>
+  <h3 class="mb-4 text-center">Détails des derniers mois</h3>
+  <div echarts [options]="optionMateriaux" class="demo-chart mb-5"></div>
 <!--  <div></div>-->
 <!--  &#45;&#45; todo &#45;&#45; <br>-->
 <!--  bois <br>-->
