@@ -102,4 +102,45 @@ export class MateriauxPageComponent implements OnInit {
       }
     ]
   };
+
+  option = {
+    tooltip: {},
+    legend: {
+      data: ['Dons', 'Réemploi']
+    },
+    radar: {
+      // shape: 'circle',
+      name: {
+        textStyle: {
+          color: '#fff',
+          backgroundColor: '#999',
+          borderRadius: 3,
+          padding: [3, 5]
+        }
+      },
+      indicator: [
+        { name: 'Bois'},
+        { name: 'Metal'},
+        { name: 'Plastiques'},
+        { name: 'Meubles'},
+        { name: 'Peintures'},
+        { name: 'Autres'}
+      ]
+    },
+    series: [{
+      name: 'Don et réemploi',
+      type: 'radar',
+      // areaStyle: {normal: {}},
+      data: [
+        {
+          value: [50, 23, 34, 35, 40, 40],
+          name: 'Dons'
+        },
+        {
+          value: [54, 35, 24, 30, 28, 27],
+          name: 'Réemploi'
+        }
+      ]
+    }]
+  };
 }
